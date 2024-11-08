@@ -1,0 +1,177 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font and Color Variables */
+:root {
+    --font-roboto: 'Roboto', sans-serif;
+
+    --color-dark-bg: #1F2937;       /* Dark background for hero and footer */
+    --color-hero-main: #F9FAF8;     /* Hero main text color */
+    --color-hero-secondary: #E5E7EB; /* Hero secondary text and header link text */
+    --color-header-logo: #F9FAF8;   /* Header logo text color */
+    --color-button-bg: #3882F6;     /* Button background color */
+    --color-info-header: #1F2937;   /* Information header text color */
+    --color-quote-bg: #E5E7EB;      /* Quote section background color */
+    --color-quote-text: #1F2937;    /* Quote text color */
+}
+
+/* General Font and Body Styling */
+body {
+    font-family: var(--font-roboto);
+    background-color: #fff;
+    color: var(--color-info-header);
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: var(--color-dark-bg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.header-logo {
+    font-size: 24px;
+    color: var(--color-header-logo);
+    font-weight: 900;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: var(--color-hero-secondary);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: var(--color-dark-bg);
+    color: var(--color-hero-secondary);
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: var(--color-hero-main);
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: var(--color-hero-secondary);
+    margin-bottom: 30px;
+}
+
+.hero .cta-button {
+    background-color: var(--color-button-bg);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero .cta-button:hover {
+    opacity: 0.9;
+}
+
+/* Information Section */
+.information {
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.information h2 {
+    font-size: 36px;
+    color: var(--color-info-header);
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+.information-cards {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.information-card {
+    width: 150px;
+    height: 150px;
+    border: 2px solid var(--color-button-bg);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-info-header);
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Quote Section */
+.quote {
+    background-color: var(--color-quote-bg);
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.quote p {
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 300;
+    color: var(--color-quote-text);
+}
+
+/* Call to Action Section */
+.call-to-action {
+    background-color: var(--color-button-bg);
+    padding: 40px;
+    text-align: center;
+}
+
+.call-to-action p {
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.call-to-action .cta-button {
+    background-color: #fff;
+    color: var(--color-button-bg);
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.call-to-action .cta-button:hover {
+    opacity: 0.9;
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-dark-bg);
+    color: var(--color-hero-secondary);
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 14px;
+}
